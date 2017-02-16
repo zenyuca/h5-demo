@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>animation(动画)</title>
   <link rel="stylesheet" type="text/css" href="../lib/css/reset.css">
   <style type="text/css">
-    .animation-div {
-      width: 100px;
-      height: 100px;
-      background-color: red;
-      position: absolute;
-      top: 200px;
-      opacity: 0.4;
-    }
-    .animation-div:hover {
-      /*
+  .animation-div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 200px;
+    opacity: 0.4;
+  }
+  
+  .animation-div:hover {
+    /*
        * myfirst: 动画名称;
        * 2s：动画时长;
        * ease：前后缓慢。[linear, ease, ease-in, ease-out, ease-in-out]
        * infinite: 无限次数, 默认为 0;
        * alternate: 反向播放动画, 默认为 normal;
        */
-      animation: myfirst 2s ease-in-out infinite alternate;
-      transition: all 2s;
-      transform-origin: bottom right;
+    animation: myfirst 2s ease-in-out infinite alternate;
+    transition: all 2s;
+    transform-origin: bottom right;
+  }
+  
+  @keyframes myfirst {
+    from {
+      left: 0;
     }
-    @keyframes myfirst {
-      from {
-        left: 0;
-      }
-      to {
-        left: 800px;
-        background-color: blue;
-        transform: rotate(720deg) scale(2, 2);
-      }
+    to {
+      left: 800px;
+      background-color: blue;
+      transform: rotate(720deg) scale(2, 2);
     }
-    .content {
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(95,126,31,0.2);
-      font-size: 18px;
-    }
-    .content pre {
-      font-family: '微软雅黑';
-      line-height: 1.4em;
-    }
+  }
+  
+  .content {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(95, 126, 31, 0.2);
+    font-size: 18px;
+  }
+  
+  .content pre {
+    font-family: '微软雅黑';
+    line-height: 1.4em;
+  }
   </style>
 </head>
+
 <body>
   <div class="animation-div"></div>
   <div class="content">
@@ -77,4 +83,5 @@
     </pre>
   </div>
 </body>
+
 </html>

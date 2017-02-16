@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Flex Sticky Footer</title>
   <link rel="stylesheet" type="text/css" href="../lib/css/reset.css">
   <style type="text/css">
-    body {
-      font-family: 'MingLiU';
-      letter-spacing: 0.1em;
-    }
-    .main {
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-    }
-    .main .content {
-      flex: 1;
-    }
-    .main .content p {
-      padding: 10px 10px;
-      font-size: 13px;
-      line-height: 1.5em;
-    }
-    footer {
-      flex: 0 0 100px;
-      margin: 0 auto;
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 100px;
-    }
+  body {
+    font-family: 'MingLiU';
+    letter-spacing: 0.1em;
+  }
+  
+  .main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  .main .content {
+    flex: 1;
+  }
+  
+  .main .content p {
+    padding: 10px 10px;
+    font-size: 13px;
+    line-height: 1.5em;
+  }
+  
+  footer {
+    flex: 0 0 100px;
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 100px;
+  }
   </style>
 </head>
+
 <body>
   <div class="main">
     <div class="content">
@@ -51,4 +57,5 @@
     </footer>
   </div>
 </body>
+
 </html>
